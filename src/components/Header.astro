@@ -1,0 +1,87 @@
+<header>
+  <div class="flex justify-between p-4">
+    <img
+      src="/RideURegularFont.png"
+      class="w-auto h-6 self-center cursor-pointer"
+      alt="logo"
+    />
+    <ul class="flex justify-between max-sm:hidden align-middle gap-4">
+      <a
+        href="#ourHistory"
+        class="font-semibold self-center cursor-pointer hover:text-purple-700"
+      >
+        Sobre Nós
+      </a>
+      <a
+        href="#ourObjective"
+        class="font-semibold self-center cursor-pointer hover:text-purple-700"
+      >
+        Objetivo
+      </a>
+      <a
+        href="#ourTeam"
+        class="font-semibold self-center cursor-pointer hover:text-purple-700"
+      >
+        Equipa
+      </a>
+      <a href="#joinUs">
+        <button
+          class="bg-purple-500 text-white font-semibold rounded-full p-2 hover:bg-purple-700"
+          >Começar <i class="fa-solid fa-angles-right"></i></button
+        >
+      </a>
+    </ul>
+    <i id="menu" class="fa-solid fa-bars fa-xl self-center sm:hidden"></i>
+  </div>
+  <ul
+    id="mobileHeader"
+    class="flex bg-gray-50 flex-col p-4 gap-6 sm:hidden hidden"
+  >
+    <a
+      href="#ourHistory"
+      class="font-semibold self-start cursor-pointer hover:text-purple-700"
+    >
+      Sobre Nós
+    </a>
+    <a
+      href="#ourObjective"
+      class="font-semibold self-start cursor-pointer hover:text-purple-700"
+    >
+      Objetivo
+    </a>
+    <a
+      href="#ourTeam"
+      class="font-semibold self-start cursor-pointer hover:text-purple-700"
+    >
+      Equipa
+    </a>
+    <a href="#joinUs">
+      <button
+        class="bg-purple-500 text-white rounded-lg font-semibold p-2 w-full"
+        >Começar <i class="fa-solid fa-angles-right"></i></button
+      >
+    </a>
+  </ul>
+  <span
+    class="flex justify-center max-md:text-sm bg-purple-100 text-purple-800 font-bold p-2"
+    ><i
+      class="fa-solid fa-fade fa-lg max-md:fa-sm max-md:p-2 fa-exclamation p-3"
+    ></i> EM DESENVOLVIMENTO
+    <i class="fa-solid fa-fade fa-lg max-md:fa-sm max-md:p-2 fa-exclamation p-3"
+    ></i></span
+  >
+</header>
+
+<script>
+  const navigation = document.getElementById("mobileHeader");
+  const menu = document.getElementById("menu");
+
+  menu.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (navigation.classList.contains("hidden")) {
+      navigation.classList.remove("hidden");
+      return;
+    }
+    navigation.classList.add("hidden");
+  });
+</script>
