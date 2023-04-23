@@ -6,8 +6,7 @@ on:
   pull_request:
     branches: ["master"]
   workflow_dispatch:
-
-concurrency: ${{ github.workflow }}-${{ github.ref }}
+    concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   build:
