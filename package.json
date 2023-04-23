@@ -1,11 +1,8 @@
 {
   "name": "landing-page",
-  "homepage": "https://filipe11402.github.io/demo-github-pages",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
